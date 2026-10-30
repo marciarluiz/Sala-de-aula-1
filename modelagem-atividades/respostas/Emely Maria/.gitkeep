@@ -1,0 +1,139 @@
+# Atividade 1 — Engenharia de Requisitos
+
+## Estudo de Caso 1 — Conecta Campus
+
+### 1. Concepção
+* **Problema:** Os alunos reclamam que o sistema atual é muito lento, ruim de usar e as informações ficam espalhadas.
+* **Objetivo:** Criar um sistema único, fácil e rápido para centralizar notas, horários, avisos e materiais das aulas.
+
+---
+
+### 2. Elicitação
+* **Stakeholders:** Alunos, professores e a coordenação da faculdade.
+* **Técnicas utilizadas:**
+  1. **Questionário:** Enviar um formulário simples para os alunos para entender quais as maiores dificuldades deles no sistema antigo.
+  2. **Entrevista:** Conversar diretamente com os professores e a coordenação para saber o que eles realmente precisam publicar no dia a dia.
+
+---
+
+### 3. Análise e modelagem
+
+#### Requisitos Funcionais (RF)
+* **RF01:** O aluno deve conseguir ver suas notas e faltas.
+* **RF02:** O aluno e o professor devem conseguir ver os horários das aulas.
+* **RF03:** O professor deve conseguir postar materiais de aula e avisos.
+* **RF04:** A coordenação deve conseguir mandar comunicados e avisos de eventos.
+* **RF05:** O sistema deve pedir login e senha para entrar.
+
+#### Requisitos Não Funcionais (RNF)
+* **RNF01:** O sistema deve carregar as páginas rapidamente, sem travar.
+* **RNF02:** O sistema deve ser seguro e guardar a senha dos usuários de forma protegida.
+* **RNF03:** O sistema deve funcionar bem no celular e no computador.
+
+---
+
+### 4. Negociação (MoSCoW)
+
+* **Must have (Inovações obrigatórias):** Login/autenticação, consulta de notas e horários, e publicação de materiais.
+  * *Justificativa:* Sem isso o sistema não serve para nada, é o básico que todo mundo precisa.
+* **Should have (Importante):** Área para a coordenação postar eventos e avisos gerais.
+  * *Justificativa:* É muito útil para a faculdade se comunicar, mas se atrasar um pouco não impede o aluno de ver a aula.
+* **Could have (Desejável):** Opção de colocar foto no perfil ou mudar para tema escuro.
+  * *Justificativa:* É legal de ter, mas não muda a vida de ninguém no começo.
+* **Won't have (Não vai ter agora):** Chat ao vivo entre aluno e professor.
+  * *Justificativa:* Vai dar muito trabalho para fazer agora e pode fazer a equipe atrasar a entrega da primeira versão.
+
+---
+
+### 5. Especificação
+
+1. **RNF01 (Desempenho):** O sistema deve carregar qualquer página em no máximo 3 segundos.
+   * *Como testar:* Cronometrar o tempo de carregamento das telas usando a ferramenta do próprio navegador.
+2. **RNF02 (Usabilidade):** O aluno deve conseguir achar a sua nota fazendo no máximo 3 cliques depois de logar.
+   * *Como testar:* Pedir para um aluno testar a tela e contar quantos cliques ele deu até achar a nota.
+3. **RNF03 (Segurança):** O sistema não pode deixar ninguém ver a página de notas sem antes digitar o login correto.
+   * *Como testar:* Tentar entrar no link direto da página de notas sem fazer login para ver se o sistema bloqueia.
+
+---
+
+### 6. Validação
+
+1. **Protótipo (Desenho das telas):** Mostrar um desenho de como vão ser as telas para alguns alunos e professores antes de programar, para ver se eles entendem fácil.
+2. **Reunião de Checagem:** Sentar com a coordenação e ler a lista de requisitos para ver se concordam com tudo ou se falta algo importante.
+
+---
+
+## Estudo de Caso 2 — PetCare
+
+### 1. Elicitação e stakeholders
+
+* **Stakeholders:**
+  * **Tutores (Donos dos pets):** Querem marcar consulta fácil pelo celular e não esquecer as vacinas.
+  * **Veterinários:** Precisam ver o histórico do animal e anotar o que fizeram na consulta.
+  * **Recepção:** Precisa organizar a agenda da clínica e evitar confusão de horários.
+  * **Gerência:** Quer ver relatórios para saber quantos atendimentos foram feitos no mês.
+
+* **Técnicas de Elicitação:**
+  1. **Observação:** Ir até a clínica e olhar como a recepção trabalha no papel e no WhatsApp para entender os erros atuais.
+  2. **Entrevista:** Fazer perguntas diretas para os veterinários sobre como eles anotam os remédios hoje.
+
+---
+
+### 2. Análise e especificação de requisitos
+
+#### Requisitos Funcionais (RF)
+* **RF01:** O tutor deve conseguir agendar consultas pelo aplicativo.
+* **RF02:** O sistema deve enviar lembretes de vacina para o dono do pet.
+* **RF03:** O veterinário deve conseguir registrar consultas, remédios e exames no histórico do pet.
+* **RF04:** A recepção deve conseguir aprovar, remarcar ou cancelar agendamentos.
+* **RF05:** O sistema deve mostrar um relatório simples com o total de atendimentos do mês.
+
+#### Requisitos Não Funcionais (RNF)
+* **RNF01:** A tela do aplicativo deve se adaptar bem em qualquer tipo de celular.
+* **RNF02:** O sistema deve buscar os dados do pet rapidamente na hora da consulta.
+* **RNF03:** Os dados dos clientes devem ficar salvos com segurança de acordo com a lei de proteção de dados.
+
+---
+
+### 3. Negociação com MoSCoW
+
+* **Must have:** Agendamento de consultas, cadastro do pet/dono, histórico médico e controle da agenda da recepção.
+  * *Justificativa:* É o principal problema da clínica hoje (fichas de papel e agendamento bagunçado).
+* **Should have:** Envio de lembrete de vacina e relatório mensal para o gerente.
+  * *Justificativa:* Ajuda bastante a clínica, mas dá para rodar o sistema mesmo se demorar um pouquinho mais para sair.
+* **Could have:** Pagamento direto pelo aplicativo.
+  * *Justificativa:* Seria muito bom, mas envolve mexer com banco e cartão de crédito, o que complica o projeto.
+* **Won't have:** Chat com o veterinário e postagem de fotos de pets.
+  * *Justificativa:* O prazo é de só 4 meses. Fazer chat e rede social vai tomar muito tempo e não resolve o problema principal da clínica.
+
+---
+
+### 4. Especificação de requisitos não funcionais
+
+1. **RNF01 (Velocidade):** A pesquisa pelo nome do pet ou do dono deve demorar menos de 2 segundos para aparecer na tela.
+   * *Como testar:* Fazer buscas com vários nomes cadastrados e medir o tempo de resposta.
+2. **RNF02 (Facilidade de uso):** O dono do pet deve conseguir marcar uma consulta em menos de 5 passos no celular.
+   * *Como testar:* Pedir para um cliente da clínica tentar agendar e contar as etapas que ele precisou fazer.
+3. **RNF03 (Segurança):** O sistema deve exigir login e senha para qualquer pessoa acessar as fichas dos animais.
+   * *Como testar:* Tentar acessar a área do veterinário direto pela URL do navegador sem estar logado.
+
+---
+
+### 5. Validação dos requisitos
+
+1. **Demonstração do Protótipo:** Criar telas simples de teste e mostrar para a secretária e para os veterinários mexerem antes de começar a codificar. Isso ajuda a ver se falta algum campo importante.
+2. **Lista de Checagem (Checklist):** Revisar todos os requisitos junto com o dono da clínica para ele dar o "OK" dizendo se é aquilo mesmo que ele espera receber.
+
+---
+
+### 6. Desafio — Priorização da primeira versão
+
+#### As 5 funcionalidades escolhidas:
+1. **Cadastro de Clientes e Pets:** Não tem como fazer nada sem antes saber quem é o dono e quem é o bicho.
+2. **Agendamento Online de Consultas:** Resolve o problema de ficar atendendo telefone e WhatsApp o tempo todo.
+3. **Controle de Agenda para a Recepção:** Evita marcar dois bichos no mesmo horário e com o mesmo veterinário.
+4. **Histórico Médico do Pet (Prontuário):** Substitui as fichas de papel que somem e ajuda o veterinário na consulta.
+5. **Lembrete de Vacinas e Consultas:** Evita que os clientes esqueçam de ir e faltem no dia marcado.
+
+#### Por que deixar o resto fora?
+Se a equipe tentar colocar pagamento, chat e fotos em apenas 4 meses, não vai dar tempo de testar tudo e o sistema pode entregar cheio de erros. O mais seguro é fazer o básico funcionar bem primeiro.
