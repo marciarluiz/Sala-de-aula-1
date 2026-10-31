@@ -3,8 +3,7 @@
 ## 1. Concepção
 
 O Conecta Campus pretende resolver o problema da fragmentação dos serviços acadêmicos e das dificuldades enfrentadas pelos alunos e professores ao utilizar o sistema atual, que é lento e pouco intuitivo. 
-
-Seu principal objetivo é centralizar os serviços acadêmicos em uma única plataforma para que alunos, professores e coordenação acessem informações e realizem atividades de maneira rápida, prática e segura.
+E o principal objetivo dele é centralizar os serviços acadêmicos em uma única plataforma para que alunos, professores e coordenação acessem informações e realizem atividades de maneira rápida, prática e segura.
 
 ## 2. Elicitação
 
@@ -26,17 +25,17 @@ Técnicas de elicitação:
 
 Requisitos funcionais (RF)
 
- RF01| O sistema deve permitir que os alunos consultem suas notas acadêmicas.
- RF02| O sistema deve permitir que os alunos consultem seus horários de aula.
- RF03| O sistema deve permitir que os professores publiquem materiais de estudo.                         
- RF04| O sistema deve permitir que os professores publiquem comunicados para os alunos.                  
- RF05| O sistema deve permitir que a coordenação divulgue eventos acadêmicos.
+ RF01: O sistema deve permitir que os alunos consultem suas notas acadêmicas.
+ RF02: O sistema deve permitir que os alunos consultem seus horários de aula.
+ RF03: O sistema deve permitir que os professores publiquem materiais de estudo.                         
+ RF04: O sistema deve permitir que os professores publiquem comunicados para os alunos.                  
+ RF05: O sistema deve permitir que a coordenação divulgue eventos acadêmicos.
 
 Requisitos não funcionais (RNF)
 
- RNF01| O sistema deve dar respostas rápidas (em até 3 segundos) em pelo menos 95% das consultas, considerando muitos usuários usando o sistema ao mesmo tempo.  
- RNF02| O sistema deve exigir autenticação para permitir o acesso às informações acadêmicas dos alunos.
- RNF03| A interface deve ser intuitiva e permitir que os usuários encontrem as principais funcionalidades em, no máximo, três etapas de navegação. 
+ RNF01: O sistema deve dar respostas rápidas (em até 3 segundos) em pelo menos 95% das consultas, considerando muitos usuários usando o sistema ao mesmo tempo.
+ RNF02: O sistema deve exigir autenticação para permitir o acesso às informações acadêmicas dos alunos.
+ RNF03: A interface deve ser intuitiva e permitir que os usuários encontrem as principais funcionalidades em, no máximo, três etapas de navegação. 
 
 ## 4. Negociação
 
@@ -49,19 +48,15 @@ Won't have: Chat entre alunos e professores.| Apesar de ser uma funcionalidade d
 
 ## 5. Especificação
 
-| Identificador | Requisito | Como testar
-
-RNF01 – Desempenho  | O sistema deve responder às consultas dos alunos em até 3 segundos em pelo menos 95% das solicitações, considerando muitos usuários simultâneos. | Simular 500 usuários acessando o sistema e medir o tempo de resposta das consultas.|
-RNF02 – Segurança   | O sistema deve exigir autenticação por login e senha antes de permitir o acesso às informações acadêmicas. | Tentar acessar as páginas de notas e horários sem estar autenticado e verificar se o acesso é bloqueado. 
+RNF01 – Desempenho: O sistema deve responder às consultas dos alunos em até 3 segundos em pelo menos 95% das solicitações, considerando muitos usuários simultâneos. | Simular vários usuários acessando o sistema e medir o tempo de resposta das consultas.|
+RNF02 – Segurança: O sistema deve exigir autenticação por login e senha antes de permitir o acesso às informações acadêmicas. | Tentar acessar as páginas de notas e horários sem estar autenticado e verificar se o acesso é bloqueado. 
 
 ## 6. Validação
 
 Técnicas de validação:
 
-Revisão de requisitos: mostrar os requisitos documentados aos alunos, professores e coordenadores para que eles vejam se as funcionalidades estão corretas, completas e de acordo com suas necessidades, ou para que possam apontar erros.
-
-Testes de aceitação: depois da implementação, chamar representantes dos diferentes grupos de usuários para executar tarefas reais no sistema, verificando se as funcionalidades atendem aos requisitos estabelecidos.
-
+1. Revisão de requisitos: mostrar os requisitos documentados aos alunos, professores e coordenadores para que eles vejam se as funcionalidades estão corretas, completas e de acordo com suas necessidades, ou para que possam apontar erros.
+2. Testes de aceitação: depois da implementação, chamar representantes dos diferentes grupos de usuários para executar tarefas reais no sistema, verificando se as funcionalidades atendem aos requisitos estabelecidos.
 
 
 
@@ -98,9 +93,9 @@ Requisitos funcionais (RF)
 
 Requisitos não funcionais (RNF)
 
-RNF01         | O sistema deve apresentar tempo de resposta de até 3 segundos em pelo menos 95% das operações, considerando até 100 usuários simultâneos. 
-RNF02         | O sistema deve exigir autenticação para permitir o acesso aos dados dos tutores e históricos médicos dos animais.                         
-RNF03         | A interface deve permitir que um tutor realize um agendamento em até três minutos, sem precisar de ajuda de outra pessoa.                 
+RNF01: O sistema deve apresentar tempo de resposta de até 3 segundos em pelo menos 95% das operações, considerando até 100 usuários simultâneos. 
+RNF02: O sistema deve exigir autenticação para permitir o acesso aos dados dos tutores e históricos médicos dos animais.                         
+RNF03: A interface deve permitir que um tutor realize um agendamento em até três minutos, sem precisar de ajuda de outra pessoa.                 
 
 ## 3. Negociação com MoSCoW
 
