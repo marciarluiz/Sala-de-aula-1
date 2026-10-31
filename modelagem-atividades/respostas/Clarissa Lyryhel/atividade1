@@ -1,0 +1,128 @@
+# ESTUDO DE CASO 1 - Conecta Campus
+
+# Concepção
+
+## Problema: os serviços academicos da universidade (notas, horários, avisos, materiais e eventos) estão dispersos e são acessados por meio de um sistema atual lento e dificil de usar, o que gera insatisfação dos alunos e dificulta a comunicação entre alunos, professores e coordenação.
+# Objetivo principal:centralizar os serviços academicos em uma única plataforma rápida, simples e segura, acessivel somente a usuários autenticados, para que alunos consultem notas, horários e avisos, professores publiquem materiais e comunicados, e a coordenacção divulgue eventos e informações academicas.
+
+# Elicitação
+
+## - alunos: consultar notas, horários  rceber avisos dos profesores.
+#  - professores: Publicar materiais e comunicados de forma simples, e alguns desejam chat.
+#  - coordenação: Divulgar eventos e informações acadêmicas.
+
+#  técnicas utilizadas:
+# entrevistas:  conversas individuais ou em pequenos grupos com representantes de alunos, professores e coordenação.     Questionário: formulário online enviado a muitos alunos e professores, com perguntas sobre o funcionamento e melhorias sobre o sistema.
+
+# Análise e modelagem
+## Requisitos funcionais(RF)
+#  RF01:  O sistema deve permitir que o usuário se autentique com login e senha para acessar informações acadêmicas. 
+# RF02: O sistema deve permitir que o aluno consulte suas notas por disciplina e período. 
+# RF03: O sistema deve permitir que o aluno consulte seu horário de aulas. 
+# RF04: O sistema deve exibir ao aluno avisos e comunicados publicados, em ordem cronológica. 
+# RF05: O sistema deve permitir que o professor publique materiais (arquivos e links) em suas disciplinas. 
+# RF06: O sistema deve permitir que o professor publique comunicados para os alunos de suas turmas. 
+# RF07: O sistema deve permitir que a coordenação cadastre e divulgue eventos e informações acadêmicas. 
+## Requisitos não funcionais (RFN)
+# RNF01: as telas principais devem carregar rapidamente. 
+# RNF02: o acesso a dados acadêmicos deve exigir autenticação.
+# RNF03: o sistema deve estar disponível em 99% do tempo no período letivo. 
+# RNF04: A interface do sistema deve ser totalmente responsiva, funcionando perfeitamente em computadores, tablets e smartphones.
+
+# Negociação
+## Must have - RF01 (autenticação), RF02 (notas), RF03 (horários), RF04 (avisos), RF05 (materiais), RF06 (comunicados), RNF01, RNF02. (são as necessidades centrais declaradas por alunos e professores)
+
+## Should have - RF07 (eventos e informações da coordenação), RNF03, RNF04, recuperação de senha.                              (eventos agregam valor à coordenação e usabilidade e disponibilidade são importantes, mas a primeira versão ainda funciona de forma útil sem eles, e a coordenação pode divulgar eventos por meio de avisos (RF04) no curto prazo.) 
+
+## Could have - Notificações push, calendário integrado de eventos, busca de materiais.                                           (melhoram a experiência, mas dependem de tempo e recursos extras.)   
+
+## Won`t have - (No sistema atual) chat entre alunos e professores.                                                                  (Como a equipe disse o chat pode atrasar a primeira versão por ser mais complexo de ser implantado.)
+
+# Especificação 
+# RNF01: rapidez - As telas de notas, horários e avisos devem responder em até 3s com 500 usuários simultâneos.                                                                                                                      Como testar: Teste de carga com ferramenta como JMeter ou k6, medindo o tempo de resposta.
+# RNF02: Segurança - Todo acesso a dados acadêmicos exige login, teste de expiração de sessão.                                     Como testar:                                         
+# RNF03: Usabilidade - 90% dos alunos de um grupo de teste devem concluir a tarefa "consultar a nota de uma disciplina" em até 1 minuto.                                                                                                                           Como testar:  Teste de usabilidade com pelo menos 10 alunos, cronometrando as tarefas.
+# RNF04: Disponibilidade - Disponibilidade mínima de 99% por mês no período letivo.                                               Como testar: Monitoramento automático e relatório mensal. 
+
+# 6. Validação
+
+# 1 - Revisão/inspeção dos requisitos com os stakeholders: reunião em que alunos, professores e coordenação leem a lista de requisitos com a equipe, confirmam se cada um está correto, completo e priorizado, e assinam a aprovação. Ajuda a encontrar erros, omissões e ambiguidades antes do desenvolvimento do sistema.
+# 2 - Prototipação: criação de protótipos de baixa ou média fidelidade das telas de login, notas, horários e avisos, apresentados aos usuários. Ao interagir, eles apontam o que falta ou não representa sua necessidade, e a equipe ajusta os requisitos.
+
+---
+
+# ESTUDO DE CASO 2 - Pet care
+
+# 1. Elicitação e stakeholders
+## Stakeholders e necessidades
+
+# Tutores dos animais: Marcar consultas pelo celular e receber lembretes de vacinação. Também pediram pagamentos, chat e fotos. 
+# Veterinários: Consultar o histórico do animal e registrar diagnósticos, tratamentos e medicamentos com rapidez durante o atendimento. 
+# Recepção: Controlar horários disponíveis e confirmar ou cancelar consultas, substituindo telefone e WhatsApp. 
+# Gerência: Relatórios sobre a quantidade de atendimentos realizados. 
+# Proprietário (patrocinador) : Sistema "rápido, seguro e muito fácil de usar", entregue em 4 meses. 
+# Equipe de TI/desenvolvimento : Escopo viável dentro do prazo e do orçamento. 
+
+## Técnicas de elicitação
+
+# 1 - Entrevistas: Entrevistas com veterinários, recepção, gerência e proprietário. São adequadas porque esses grupos são pequenos e possuem necessidades específicas e detalhadas (ex.: quais informações do prontuário são indispensáveis). Permitem também esclarecer o que o proprietário entende por "rápido, seguro e fácil".
+# 2 - Observação: acompanhar o atendimento na recepção e analisar fichas e arquivos existentes. Justifica-se porque o processo atual é informal (telefone, WhatsApp e papel) e muitos detalhes não aparecem em entrevistas, como retrabalho, informações perdidas e horários conflitantes.
+# 3 - Questionário: envio online (inclusive pelo WhatsApp já utilizado) para saber quais funcionalidades importam mais (pagamento, chat, fotos, lembretes). Justifica-se pelo número grande de tutores e pela necessidade de dados objetivos para priorizar.
+
+## 2. Análise e especificação de requisitos
+
+### Requisitos funcionais
+
+# RF01: O sistema deve permitir o cadastro e a autenticação de tutores, com cadastro de seus animais (nome, espécie, raça, data de nascimento). 
+# RF02 : O tutor deve poder agendar consulta pelo celular, escolhendo veterinário, data e horário entre os disponíveis. 
+# RF03 : O sistema deve enviar lembretes de vacinação ao tutor com antecedência configurável (ex.: 7 dias antes). 
+# RF04 : O veterinário deve poder consultar o histórico do animal (consultas, vacinas e medicamentos). 
+# RF05 : O veterinário deve poder registrar diagnóstico, tratamento e medicamentos de cada atendimento. 
+# RF06 : A recepção deve poder visualizar horários disponíveis e confirmar, remarcar ou cancelar consultas. 
+# RF07 : A gerência deve poder gerar relatório da quantidade de atendimentos por período e por veterinário. 
+
+### Requisitos não funcionais
+
+# RNF01 | consultas e agendamentos devem responder em até 3 segundos em 95% das requisições. 
+# RNF02 | dados de tutores e animais acessíveis somente por usuários autenticados, conforme o perfil (tutor, veterinário, recepção, gerência); dados trafegam via HTTPS e senhas são criptografadas (em conformidade com a LGPD). 
+# RNF03 | um tutor deve concluir o agendamento de consulta em até 2 minutos, no primeiro uso, sem ajuda. 
+# RNF04 | sistema disponível em 99% do tempo no horário de funcionamento da clínica. 
+
+## 3. Negociação com MoSCoW
+
+# Must have: RF01,RF02, RF06, RF04 e RF05 RNF01–RNF03.                                                                                                                          (são o núcleo do problema descrito (agendamentos por telefone/WhatsApp e histórico espalhado em fichas). Sem eles o sistema não substitui o processo atual.)
+
+# Should have: RF03, RF07                                                                                                          (são topicos que melhoram o sistema, porém a clinica continua funcionando sem eles.) 
+
+# Could have: Publicação de fotos dos animais                                                                                         (melhoram a experiência, mas dependem de tempo e recursos extras.)
+
+# Won't have: Pagamento pelo aplicativo; chat com o veterinário                                                                      (o chat exige mensagens em tempo real e é uma responsabilidade a mais, pagamentos pelo aplicativo exigem recursos de segurança melhores e outros aspectos mais difíceis de implantar.)
+
+## 4. Especificação de requisitos não funcionais
+
+# RNF01: Rápido - Telas de agendamento e consulta de histórico respondem em até 3 s em 95% das requisições, com até 100 usuários simultâneos; o app abre em até 4 s em celular intermediário.                                                                          Como testar:Teste de carga (JMeter/k6) medindo o percentil 95; cronometragem da abertura em aparelhos reais. 
+# RNF02: Seguro - Acesso somente com login; senhas ; cada perfil acessa apenas seus dados (um tutor não vê animais de outros); sessão expira em 15 min de inatividade.                                                                                                     Como testar: Testes de autorização com contas de cada perfil; inspeção do banco e do tráfego; varredura de vulnerabilidades (ex.: OWASP ZAP).
+# RNF03:  Fácil de usar - 90% dos tutores de um grupo de teste concluem o agendamento em até 2 minutos, sem ajuda.                  Como testar: Teste de usabilidade com pelo menos 10 tutores, com cronômetro e questionário.
+# RNF04:  Disponível - 99% de disponibilidade mensal durante o horário de funcionamento da clínica.                                   Como testar: Monitoramento de uptime e relatório mensal. 
+
+## 5. Validação dos requisitos
+
+# 1 - Revisão formal com os stakeholders: apresentação do documento de requisitos em reuniões separadas por perfil (veterinários, recepção, gerência e proprietário). Cada grupo confere se o que foi escrito representa o que precisa. Isso revela erros (requisito mal compreendido), omissões (ex.: a recepção precisa remarcar, não só cancelar) e divergências (ex.: o proprietário quer pagamento, mas a gerência prioriza relatórios). O resultado é registrado em ata e aprovado.
+# 2 - Prototipação e testes com usuários: protótipos navegáveis do agendamento, do prontuário e da agenda da recepção são testados por tutores, veterinários e recepcionistas. Observar o uso real mostra telas confusas, campos faltantes e fluxos inadequados antes de o código ser escrito.
+# 3 - Critérios de aceitação e rastreabilidade: cada requisito tem critério verificável e é ligado a uma necessidade do stakeholder. Assim, requisitos sem origem ou necessidades sem requisito são facilmente detectados.
+
+## 6. Desafio — Priorização da primeira versão 
+
+ # 1: Funcionalidade - Necessidade atendida - Beneficiados - Por que na v1 
+# Cadastro e login de tutores e animais (RF01) - Identificar quem é o tutor e quem é o animal, com segurança. - Todos - É pré-requisito de quase todas as outras funcionalidades e garante a segurança dos dados. 
+# 2: Agendamento de consultas pelo celular (RF02) - Substituir o agendamento por telefone/WhatsApp. - Tutores e recepção - É a principal dor dos tutores e reduz a carga de ligações na recepção. 
+# 3: Gestão de agenda pela recepção (RF06) - Controlar horários, confirmar, remarcar e cancelar. - Recepção e tutores - Sem ela, agendamentos feitos no app não são organizados e podem gerar conflitos de horário. 
+# 4: Prontuário: histórico e registro clínico (RF04 e RF05) - Encontrar rapidamente consultas, vacinas e medicamentos; registrar diagnósticos e tratamentos. - Veterinários, tutores (atendimento melhor) - Resolve o problema das fichas e arquivos separados e melhora a qualidade e a segurança do atendimento. 
+# 5: Lembretes de vacinação (RF03) - Evitar atrasos de vacina. - Tutores e clínica - Aproveita os dados do prontuário, é de implementação relativamente simples e traz valor direto ao tutor, ajudando a reduzir faltas. 
+
+## Funcionalidades adiadas e riscos:
+
+# - Relatórios de atendimentos (RF07): risco de a gerência ficar sem visão consolidada. Mitigação: exportação simples dos dados ou contagem manual até a v2. Como o dado já será registrado no sistema, o relatório poderá ser criado depois sem retrabalho.
+# - Pagamento pelo aplicativo: risco de o proprietário e os tutores esperarem a funcionalidade e de a clínica perder conveniência. Mitigação: manter o pagamento presencial e planejar a integração com gateway na v2.
+# - Chat com o veterinário: risco de tutores continuarem usando WhatsApp, fora do sistema, sem registro. Mitigação: manter o canal atual e avaliar o chat após medir a demanda real.
+# - Fotos dos animais: risco baixo, pois é uma funcionalidade de engajamento. Pode ser adicionada a qualquer momento.
