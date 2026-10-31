@@ -1,0 +1,239 @@
+<p align="center">
+  <img src="uepb_lg.png" width="250">
+</p>
+
+---
+## Atividade 1 - Modelagem
+**Aluno:** João Victor Machado Gomes
+**Curso:** Análise e Desenvolvimento de Sistemas  
+**Professora:** Marcia Ramos
+
+---
+### 1. Concepção
+
+O Conecta Campus pretende resolver a dificuldade que alunos, professores
+e coordenação enfrentam para acessar e divulgar informações acadêmicas.
+O sistema atual é lento e difícil de utilizar, além de manter os
+serviços e comunicados pouco centralizados.
+
+Seu principal objetivo é reunir os serviços acadêmicos em uma única
+plataforma, permitindo que os usuários consultem e compartilhem
+informações de forma simples, rápida e segura.
+
+### 2. Elicitação
+**Principais stakeholders**
+
+**Alunos:** Consultar notas e horários, receber avisos, usar um sistema rápido e simples
+**Professores:**Publicar materiais e comunicados; alguns desejam um chat com os alunos
+**Coordenação:** Divulgar eventos e informações acadêmicas
+**Universidade / gestão:** Centralizar os serviços e garantir acesso somente a usuários autenticados
+**Setor de TI / secretaria acadêmica:** Integrar o sistema aos dados acadêmicos existentes e mantê-lo funcionando
+**Equipe de desenvolvimento:**Entregar a primeira versão dentro do prazo e do escopo
+
+**Técnicas**
+1. **Entrevistas:** conversar com representantes de alunos, professores
+e coordenação. Por meio de perguntas, a equipe pode entender quais
+informações são mais importantes, quais dificuldades existem no
+sistema atual e quais funções são necessárias.
+2. **Questionários:** enviar perguntas para um número maior de alunos e
+professores. Isso ajuda a identificar problemas comuns, preferências
+e funcionalidades mais solicitadas.
+3. **Observação / análise do sistema atual:** observar usuários realizando tarefas no sistema atual para identificar pontos de lentidão e de dificuldade de uso.
+
+## 3. Análise e modelagem
+**Requisitos funcionais (RF):**
+
+**RF01:** O sistema deve permitir que alunos, professores e coordenadores realizem login com suas credenciais
+**RF02:** O sistema deve permitir que os alunos consultem suas notas.
+**RF03:** O sistema deve permitir que os alunos consultem seus horários de aula.
+**RF04:** O sistema deve exibir avisos e comunicados destinados aos alunos
+**RF05:** O sistema deve permitir que professores publiquem materiais e comunicados.
+**RF06:** O sistema deve permitir que a coordenação publique eventos e informações acadêmicas.
+
+## Requisitos não funcionais
+
+**RNF01 (Segurança)** As informações acadêmicas só podem ser acessadas por usuários autenticados
+**RNF02 (Desempenho)** As páginas principais devem carregar em até 3 segundos com até 500 usuários simultâneos
+**RNF03 (Usabilidade)**Um aluno que recebeu orientações básicas
+deve conseguir localizar suas notas e horários facilmente, sem ajuda de outra pessoa
+**RNF04 (Disponibilidade)** — O sistema deve estar disponível durante o período letivo.
+
+### 4. Negociação --- MoSCoW
+
+**Must have (indispensável):**
+-Login e autenticação dos usuários
+-Consulta de notas e horários
+-Visualização de avisos
+-Publicação de materiais e comunicados pelos professores
+-Divulgação de eventos e informações pela coordenação 
+-Requisitos de segurança e desempenho
+
+**Should have (importante):**
+-Melhorias de acessibilidade e adaptação da interface para celulares
+-Filtros para localizar comunicados e materiais com mais facilidade.
+
+
+**Could have (desejável):**
+-Personalização das notificações recebidas pelos alunos.
+-Opções adicionais de organização dos materiais.
+
+**Won't have (não será implementado na versão atual):**
+-Chat entre alunos e professores.
+
+
+### 5. Especificação de requisitos não funcionais
+
+**RNF01 Desempenho:** 95% das consultas de notas, horários e avisos devem carregar em até 3 segundos, considerando até 500 usuários simultâneos. **Teste:** executar testes de carga e medir o tempo de resposta das consultas.
+**RNF02 Segurança:** todas as páginas que exibem informações acadêmicas devem exigir login, e uma tentativa de acesso sem autenticação deve ser bloqueada. **Teste:** tentar abrir essas páginas sem estar autenticado e verificar se o sistema redireciona para o login ou apresenta acesso negado.
+**RNF03 Usabilidade:** pelo menos 8 de cada 10 participantes de um teste com alunos devem conseguir encontrar suas notas e horários
+em até 2 minutos, sem ajuda. **Teste:** realizar tarefas com um grupo de alunos e registrar o tempo e a taxa de conclusão.
+
+### 6. Validação
+**Reuniões de revisão:** apresentar a lista de requisitos para representantes dos alunos, professores e coordenação. Cada grupo poderá confirmar se suas necessidades foram atendidas e apontar informações incorretas ou ausentes.
+**Protótipos:** apresentar telas simples do sistema, como a página de notas, horários e publicação de comunicados. Os usuários poderão testar ou avaliar os caminhos de navegação e informar se a solução atende ao que esperam.
+**Checklist de requisitos:** revisar com os stakeholders se cada necessidade levantada possui um requisito correspondente, claro e possível de testar.
+
+
+------------------------------------------------------------------------
+
+## Estudo de Caso 2 --- PetCare
+
+### 1. Elicitação e stakeholders
+
+**Principais stakeholders e suas necessidades:**
+
+**Tutores dos animais:** precisam agendar consultas pelo celular,
+consultar informações dos atendimentos e receber lembretes de vacinação.
+**Veterinários:** precisam acessar o histórico dos animais e registrar diagnósticos, tratamentos e medicamentos.
+**Recepção:** precisa visualizar horários disponíveis, cadastrar agendamentos e confirmar ou cancelar consultas.
+**Gerência/proprietário:** precisa acompanhar a quantidade de atendimentos e obter informações para administrar a clínica.
+**Equipe de desenvolvimento:** precisa compreender as necessidades,as limitações do prazo e as prioridades da primeira versão.
+
+**Técnicas de elicitação:**
+**Entrevistas:** conversar separadamente com veterinários,recepcionistas, gerência e alguns tutores. As entrevistas permitem entender o processo atual, os problemas das fichas e dos agendamentos e as informações necessárias em cada atividade.
+**Observação do trabalho:** acompanhar a recepção realizando agendamentos e os veterinários consultando fichas e registrando atendimentos. Isso ajuda a identificar etapas, dificuldades e informações que precisam estar no sistema.
+**Análise de documentos:** examinar fichas dos animais, registros de vacinação e controles de agendamento utilizados pela clínica. Essa técnica ajuda a descobrir quais dados precisam ser armazenados.
+
+
+**Requisitos funcionais (RF):**
+
+**RF01:** O sistema deve permitir que tutores cadastrem seus dados e as informações dos seus animais.
+**RF02:** O sistema deve permitir que tutores solicitem agendamentos de consultas pelo celular, conforme os horários disponíveis.
+**RF03:** O sistema deve permitir que a recepção visualize, confirme e cancele agendamentos.
+**RF04:** O sistema deve permitir que veterinários consultem o histórico de cada animal.
+**RF05:** O sistema deve permitir que veterinários registrem diagnósticos, tratamentos e medicamentos associados a um atendimento.
+**RF06:** O sistema deve enviar lembretes aos tutores sobre as datas de vacinação cadastradas.
+**RF07:** O sistema deve gerar relatórios com a quantidade de atendimentos realizados em um período selecionado.
+
+
+**Requisitos não funcionais (RNF):**
+
+**RNF01 Desempenho:** 95% das consultas ao histórico dos animais
+e das pesquisas de horários disponíveis devem apresentar resultado
+em até 3 segundos, com até 100 usuários simultâneos.
+
+**RNF02 Segurança e privacidade:** somente usuários autenticados
+e autorizados podem acessar os dados dos clientes e dos animais;
+veterinários podem consultar e registrar informações clínicas,
+enquanto tutores acessam apenas os dados dos próprios animais.
+
+**RNF03 Usabilidade:** em um teste com 10 tutores, pelo menos 8
+devem conseguir solicitar um agendamento sem ajuda e em até 3
+minutos.
+
+**RNF04 Disponibilidade:** durante o horário de funcionamento da
+clínica, o sistema deve permanecer disponível em pelo menos 99% do
+tempo mensal, desconsiderando manutenções previamente comunicadas.
+
+### 3. Negociação com MoSCoW
+**Must have (indispensável):**
+
+-Cadastro de tutores e animais
+-Agendamento de consultas
+-Controle, confirmação e cancelamento de consultas pela recepção
+-Consulta ao histórico dos animais
+-Registro de diagnósticos, tratamentos e medicamentos
+-Segurança e controle de acesso aos dados.
+
+**Should have (importante):**
+
+-Lembretes de vacinação 
+-Relatórios de atendimentos para a gerência (RF07).
+
+**Could have (desejável):**
+
+-Pagamentos pelo aplicativo.
+-Chat com o veterinário.
+
+**Won't have (não será implementado na versão atual):**
+-Área para publicação de fotos dos animais.
+
+
+### 4. Especificação de requisitos não funcionais
+
+**RNF01 Desempenho:** 95% das pesquisas de horários e consultas
+ao histórico devem apresentar resultado em até 3 segundos, com até 100 usuários simultâneos. **Verificação:** executar testes de desempenho e registrar os tempos de resposta.
+**RNF02 Segurança:** o sistema deve exigir autenticação para acessar dados pessoais e clínicos, além de impedir que um tutor consulte os dados de animais pertencentes a outro tutor.
+**Verificação:** realizar testes com contas de diferentes perfis e tentar acessar dados sem login e com permissões inadequadas.
+**RNF03 Usabilidade:** pelo menos 8 de 10 tutores participantes
+devem conseguir concluir um agendamento em até 3 minutos, sem
+orientação da equipe. **Verificação:** realizar testes de usabilidade, observando o tempo e a conclusão da tarefa.
+**RNF04  Disponibilidade:** o sistema deve apresentar
+disponibilidade mínima de 99% durante o horário de funcionamento da
+clínica, em cada mês. **Verificação:** acompanhar os registros de
+disponibilidade do sistema durante o mês.
+
+
+### 5. Validação dos requisitos
+
+**Revisão dos requisitos:** apresentar os requisitos escritos para
+tutores, veterinários, recepção e gerência. Cada grupo deve
+verificar se suas necessidades foram representadas e apontar erros,
+omissões ou informações contraditórias.
+**Prototipação:** criar telas simples de cadastro, agendamento,
+histórico do animal e registro de atendimento. Os stakeholders
+poderão avaliar se as telas e os caminhos de utilização correspondem
+ao trabalho real da clínica.
+**Simulação de cenários:** apresentar situações comuns, como um
+tutor marcar uma consulta ou um veterinário consultar o histórico de
+um animal. A equipe verifica com os envolvidos se o sistema proposto
+permite realizar corretamente cada atividade.
+
+### 6. Desafio Priorização da primeira versão
+**Cadastro de tutores e animais**
+**Necessidade atendida:** reunir os dados dos clientes e dos animais em um único local.
+**Beneficiados:** tutores, recepção e veterinários.
+**Justificativa:** é a base para identificar cada cliente e animal e relacionar os demais registros.
+**Agendamento de consultas pelo celular**
+**Necessidade atendida:** substituir parte dos agendamentosfeitos por telefone e WhatsApp.
+**Beneficiados:** tutores e recepção.
+**Justificativa:** facilita a solicitação de consultas e reduz a dependência do atendimento manual.
+
+**Controle de horários, confirmações e cancelamentos pela recepção**
+**Necessidade atendida:** organizar a agenda e evitar conflitos de horários.
+**Beneficiados:** recepção, veterinários e tutores.
+**Justificativa:** garante que os pedidos de agendamento sejam
+acompanhados e que a clínica mantenha uma agenda organizada.
+
+**Consulta ao histórico e registro de atendimentos pelos veterinários**
+**Necessidade atendida:** substituir fichas e arquivos separados
+por um histórico centralizado, com diagnósticos, tratamentos medicamentos.
+**Beneficiados:** veterinários e animais atendidos, além dos tutores.
+**Justificativa:** é essencial para dar continuidade ao atendimento e consultar informações anteriores com rapidez.
+**Lembretes de vacinação**
+**Necessidade atendida:** avisar os tutores sobre as datas de vacinação cadastradas.
+**Beneficiados:** tutores, veterinários e animais.
+**Justificativa:** ajuda a evitar que vacinas importantes sejam esquecidas e atende a uma necessidade expressa pelos tutores.
+
+**Riscos de adiar as demais funcionalidades:**
+**Relatórios gerenciais:** a gerência terá menos informações
+automáticas para acompanhar o volume de atendimentos e precisará
+fazer esse controle manualmente.
+**Pagamentos pelo aplicativo:** os tutores continuarão utilizando os
+meios de pagamento já adotados pela clínica, sem a conveniência de
+pagar diretamente pelo sistema.
+**Chat com o veterinário:** a comunicação continuará ocorrendo por
+telefone ou WhatsApp, sem atendimento dentro do PetCare.
+**Publicação de fotos:** os tutores não terão uma área para
+compartilhar fotos dos animais, mas isso não prejudica as funções
+essenciais de atendimento.
