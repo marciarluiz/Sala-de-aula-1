@@ -16,11 +16,11 @@ Equipe de desenvolvimento: responsável por construir e manter o sistema.
 
 Técnicas de elicitação:
 
-# 1. Entrevistas: conversar diretamente com alunos, professores e coordenadores para entender suas dificuldades e descobrir quais funcionalidades são mais importantes.
+1. Entrevistas: conversar diretamente com alunos, professores e coordenadores para entender suas dificuldades e descobrir quais funcionalidades são mais importantes.
 
-# 2. Questionários: aplicar perguntas para vários usuários, identificando quais problemas são mais frequentes e quais recursos eles gostariam de encontrar no sistema.
+2. Questionários: aplicar perguntas para vários usuários, identificando quais problemas são mais frequentes e quais recursos eles gostariam de encontrar no sistema.
 
-# 3. Observação: acompanhar como os usuários utilizam o sistema atual para identificar dificuldades e oportunidades de melhoria.
+3. Observação: acompanhar como os usuários utilizam o sistema atual para identificar dificuldades e oportunidades de melhoria.
 
 ## 3. Análise e modelagem
 
@@ -89,9 +89,9 @@ Como testar: solicitar que alguns alunos encontrem suas notas e observar a quant
 
 A equipe pode utilizar as seguintes técnicas:
 
-# 1. Reuniões de validação: apresentar os requisitos aos alunos, professores e coordenadores para verificar se as funcionalidades descritas correspondem às suas necessidades. Os participantes poderão sugerir alterações ou apontar informações que estejam faltando.
+1. Reuniões de validação: apresentar os requisitos aos alunos, professores e coordenadores para verificar se as funcionalidades descritas correspondem às suas necessidades. Os participantes poderão sugerir alterações ou apontar informações que estejam faltando.
 
-# 2. Protótipos: criar modelos visuais das telas do sistema e permitir que os usuários testem a navegação. Assim, será possível identificar dificuldades e verificar se a organização das funcionalidades está adequada.
+2. Protótipos: criar modelos visuais das telas do sistema e permitir que os usuários testem a navegação. Assim, será possível identificar dificuldades e verificar se a organização das funcionalidades está adequada.
 
 ------
 
@@ -110,11 +110,11 @@ Equipe de desenvolvimento: responsável por desenvolver e manter o sistema.
 
 Técnicas de elicitação:
 
-# 1. Entrevistas: conversar com veterinários, recepcionistas e tutores para entender suas dificuldades atuais e descobrir quais funcionalidades são mais necessárias.
+1. Entrevistas: conversar com veterinários, recepcionistas e tutores para entender suas dificuldades atuais e descobrir quais funcionalidades são mais necessárias.
 
-# 2. Observação: acompanhar o atendimento da clínica, observando como são realizados os agendamentos e como os profissionais consultam as fichas dos animais. Isso ajudará a identificar problemas no processo atual.
+2. Observação: acompanhar o atendimento da clínica, observando como são realizados os agendamentos e como os profissionais consultam as fichas dos animais. Isso ajudará a identificar problemas no processo atual.
 
-# 3. Questionários: aplicar perguntas aos tutores para descobrir quais recursos gostariam de utilizar, como agendamento pelo celular e lembretes de vacinação.
+3. Questionários: aplicar perguntas aos tutores para descobrir quais recursos gostariam de utilizar, como agendamento pelo celular e lembretes de vacinação.
 
 ## 2. Análise e especificação de requisitos
 
@@ -183,9 +183,9 @@ Como testar: pedir para alguns tutores realizarem um agendamento e medir o tempo
 
 A equipe pode utilizar duas técnicas principais:
 
-# 1. Reuniões de validação: apresentar os requisitos aos tutores, veterinários, recepcionistas e gerência. Cada participante poderá verificar se suas necessidades foram atendidas e apontar possíveis erros ou funcionalidades que estejam faltando.
+1. Reuniões de validação: apresentar os requisitos aos tutores, veterinários, recepcionistas e gerência. Cada participante poderá verificar se suas necessidades foram atendidas e apontar possíveis erros ou funcionalidades que estejam faltando.
 
-# 2. Prototipação: desenvolver modelos das telas do sistema, permitindo que os usuários testem funções como agendamento, consulta ao histórico e controle de horários. Dessa forma, a equipe poderá identificar problemas antes de iniciar o desenvolvimento.
+2. Prototipação: desenvolver modelos das telas do sistema, permitindo que os usuários testem funções como agendamento, consulta ao histórico e controle de horários. Dessa forma, a equipe poderá identificar problemas antes de iniciar o desenvolvimento.
 
 Essas técnicas ajudam a garantir que o sistema seja desenvolvido de acordo com as expectativas dos envolvidos, evitando retrabalho.
 
@@ -193,31 +193,31 @@ Essas técnicas ajudam a garantir que o sistema seja desenvolvido de acordo com 
 
 Considerando o orçamento disponível e o prazo de quatro meses, escolheria as seguintes cinco funcionalidades para a primeira versão:
 
-# 1. Cadastro e login dos usuários
+1. Cadastro e login dos usuários
 
 Necessidade atendida: permitir que os usuários tenham acesso ao sistema de forma organizada e segura.
 Beneficiados: tutores, veterinários e recepcionistas.
 Justificativa: é necessário identificar os usuários e controlar o acesso às informações.
 
-# 2. Agendamento de consultas
+2. Agendamento de consultas
 
 Necessidade atendida: permitir que os tutores marquem consultas pelo celular.
 Beneficiados: tutores e recepcionistas.
 Justificativa: resolve o problema dos agendamentos realizados exclusivamente por telefone e WhatsApp.
 
-# 3. Controle de horários disponíveis
+3. Controle de horários disponíveis
 
 Necessidade atendida: organizar os horários e evitar conflitos entre consultas.
 Beneficiados: recepcionistas, veterinários e tutores.
 Justificativa: permite que a clínica tenha uma agenda organizada e facilite a marcação de consultas.
 
-# 4. Histórico dos animais
+4. Histórico dos animais
 
 Necessidade atendida: armazenar e consultar diagnósticos, tratamentos e medicamentos.
 Beneficiados: veterinários e tutores.
 Justificativa: substitui as fichas e arquivos separados, facilitando a localização das informações dos animais.
 
-# 5. Lembretes de vacinação
+5. Lembretes de vacinação
 
 Necessidade atendida: avisar os tutores sobre as datas de vacinação dos animais.
 Beneficiados: tutores e veterinários.
