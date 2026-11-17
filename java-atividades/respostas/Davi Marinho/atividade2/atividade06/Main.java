@@ -1,0 +1,9 @@
+public class Main {
+    public static void main(String[] args) {
+        Circulo circulo = new Circulo(5.0);
+        Retangulo retangulo = new Retangulo(8.0, 4.0);
+
+        circulo.exibirResultado();
+        retangulo.exibirResultado();
+    }
+}
