@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1246 640" width="1246" height="640">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="623.0" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#333">Atividade 9 — Sistema de Dispositivos Eletrônicos (Diagrama de Classes UML)</text>
+<rect x="422.0" y="60" width="402.0" height="262" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="422.0" y1="88" x2="824.0" y2="88" stroke="#222" stroke-width="1.5"/>
+<line x1="422.0" y1="142" x2="824.0" y2="142" stroke="#222" stroke-width="1.5"/>
+<text x="623.0" y="79" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">Dispositivo</text>
+<text x="432.0" y="109" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- marca : String</text>
+<text x="432.0" y="130" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- ligado : boolean</text>
+<text x="432.0" y="163" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ Dispositivo(marca : String, ligado : boolean)</text>
+<text x="432.0" y="184" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getMarca() : String</text>
+<text x="432.0" y="205" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setMarca(marca : String) : void</text>
+<text x="432.0" y="226" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ isLigado() : boolean</text>
+<text x="432.0" y="247" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve"># setLigado(ligado : boolean) : void</text>
+<text x="432.0" y="268" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ ligar() : void</text>
+<text x="432.0" y="289" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ desligar() : void</text>
+<text x="432.0" y="310" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirEstado() : void</text>
+<rect x="30.0" y="432" width="626.0" height="178" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="30.0" y1="460" x2="656.0" y2="460" stroke="#222" stroke-width="1.5"/>
+<line x1="30.0" y1="493" x2="656.0" y2="493" stroke="#222" stroke-width="1.5"/>
+<text x="343.0" y="451" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">Computador</text>
+<text x="40.0" y="481" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- sistemaOperacional : String</text>
+<text x="40.0" y="514" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ Computador(marca : String, ligado : boolean, sistemaOperacional : String)</text>
+<text x="40.0" y="535" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getSistemaOperacional() : String</text>
+<text x="40.0" y="556" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setSistemaOperacional(sistemaOperacional : String) : void</text>
+<text x="40.0" y="577" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ ligar() : void</text>
+<text x="40.0" y="598" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirEstado() : void</text>
+<polyline points="343.0,432 343.0,362 623.0,362" fill="none" stroke="#222" stroke-width="1.5"/>
+<rect x="726.0" y="432" width="490.0" height="178" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="726.0" y1="460" x2="1216.0" y2="460" stroke="#222" stroke-width="1.5"/>
+<line x1="726.0" y1="493" x2="1216.0" y2="493" stroke="#222" stroke-width="1.5"/>
+<text x="971.0" y="451" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">Televisao</text>
+<text x="736.0" y="481" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- canal : int</text>
+<text x="736.0" y="514" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ Televisao(marca : String, ligado : boolean, canal : int)</text>
+<text x="736.0" y="535" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getCanal() : int</text>
+<text x="736.0" y="556" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setCanal(canal : int) : void</text>
+<text x="736.0" y="577" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ ligar() : void</text>
+<text x="736.0" y="598" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirEstado() : void</text>
+<polyline points="971.0,432 971.0,362 623.0,362" fill="none" stroke="#222" stroke-width="1.5"/>
+<line x1="623.0" y1="362" x2="623.0" y2="338" stroke="#222" stroke-width="1.5"/>
+<polygon points="623.0,322 613.0,340 633.0,340" fill="#ffffff" stroke="#222" stroke-width="1.5"/>
+</svg>

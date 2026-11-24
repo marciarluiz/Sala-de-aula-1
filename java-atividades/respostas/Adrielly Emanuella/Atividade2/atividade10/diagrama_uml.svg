@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1326 619" width="1326" height="619">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="663.0" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#333">Atividade 10 — Sistema de Transporte (Diagrama de Classes UML)</text>
+<rect x="402.0" y="60" width="522.0" height="241" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="402.0" y1="88" x2="924.0" y2="88" stroke="#222" stroke-width="1.5"/>
+<line x1="402.0" y1="142" x2="924.0" y2="142" stroke="#222" stroke-width="1.5"/>
+<text x="663.0" y="79" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">Transporte</text>
+<text x="412.0" y="109" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- modelo : String</text>
+<text x="412.0" y="130" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- capacidadePassageiros : int</text>
+<text x="412.0" y="163" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ Transporte(modelo : String, capacidadePassageiros : int)</text>
+<text x="412.0" y="184" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getModelo() : String</text>
+<text x="412.0" y="205" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setModelo(modelo : String) : void</text>
+<text x="412.0" y="226" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getCapacidadePassageiros() : int</text>
+<text x="412.0" y="247" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setCapacidadePassageiros(capacidadePassageiros : int) : void</text>
+<text x="412.0" y="268" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ mover() : void</text>
+<text x="412.0" y="289" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirInformacoes() : void</text>
+<rect x="30.0" y="411" width="602.0" height="178" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="30.0" y1="439" x2="632.0" y2="439" stroke="#222" stroke-width="1.5"/>
+<line x1="30.0" y1="472" x2="632.0" y2="472" stroke="#222" stroke-width="1.5"/>
+<text x="331.0" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">Bicicleta</text>
+<text x="40.0" y="460" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- tipo : String</text>
+<text x="40.0" y="493" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ Bicicleta(modelo : String, capacidadePassageiros : int, tipo : String)</text>
+<text x="40.0" y="514" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getTipo() : String</text>
+<text x="40.0" y="535" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setTipo(tipo : String) : void</text>
+<text x="40.0" y="556" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ mover() : void</text>
+<text x="40.0" y="577" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirInformacoes() : void</text>
+<polyline points="331.0,411 331.0,341 663.0,341" fill="none" stroke="#222" stroke-width="1.5"/>
+<rect x="702.0" y="411" width="594.0" height="178" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="702.0" y1="439" x2="1296.0" y2="439" stroke="#222" stroke-width="1.5"/>
+<line x1="702.0" y1="472" x2="1296.0" y2="472" stroke="#222" stroke-width="1.5"/>
+<text x="999.0" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">Onibus</text>
+<text x="712.0" y="460" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- tarifa : double</text>
+<text x="712.0" y="493" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ Onibus(modelo : String, capacidadePassageiros : int, tarifa : double)</text>
+<text x="712.0" y="514" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getTarifa() : double</text>
+<text x="712.0" y="535" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setTarifa(tarifa : double) : void</text>
+<text x="712.0" y="556" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ mover() : void</text>
+<text x="712.0" y="577" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirInformacoes() : void</text>
+<polyline points="999.0,411 999.0,341 663.0,341" fill="none" stroke="#222" stroke-width="1.5"/>
+<line x1="663.0" y1="341" x2="663.0" y2="317" stroke="#222" stroke-width="1.5"/>
+<polygon points="663.0,301 653.0,319 673.0,319" fill="#ffffff" stroke="#222" stroke-width="1.5"/>
+</svg>

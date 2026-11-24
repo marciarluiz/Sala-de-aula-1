@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1158 619" width="1158" height="619">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="579.0" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#333">Atividade 7 — Sistema de Biblioteca (Diagrama de Classes UML)</text>
+<rect x="334.0" y="60" width="490.0" height="241" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="334.0" y1="88" x2="824.0" y2="88" stroke="#222" stroke-width="1.5"/>
+<line x1="334.0" y1="142" x2="824.0" y2="142" stroke="#222" stroke-width="1.5"/>
+<text x="579.0" y="79" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">MaterialBiblioteca</text>
+<text x="344.0" y="109" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- titulo : String</text>
+<text x="344.0" y="130" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- anoPublicacao : int</text>
+<text x="344.0" y="163" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ MaterialBiblioteca(titulo : String, anoPublicacao : int)</text>
+<text x="344.0" y="184" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getTitulo() : String</text>
+<text x="344.0" y="205" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setTitulo(titulo : String) : void</text>
+<text x="344.0" y="226" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getAnoPublicacao() : int</text>
+<text x="344.0" y="247" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setAnoPublicacao(anoPublicacao : int) : void</text>
+<text x="344.0" y="268" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ calcularPrazoEmprestimo() : int</text>
+<text x="344.0" y="289" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirInformacoes() : void</text>
+<rect x="30.0" y="411" width="514.0" height="178" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="30.0" y1="439" x2="544.0" y2="439" stroke="#222" stroke-width="1.5"/>
+<line x1="30.0" y1="472" x2="544.0" y2="472" stroke="#222" stroke-width="1.5"/>
+<text x="287.0" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">Livro</text>
+<text x="40.0" y="460" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- autor : String</text>
+<text x="40.0" y="493" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ Livro(titulo : String, anoPublicacao : int, autor : String)</text>
+<text x="40.0" y="514" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getAutor() : String</text>
+<text x="40.0" y="535" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setAutor(autor : String) : void</text>
+<text x="40.0" y="556" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ calcularPrazoEmprestimo() : int</text>
+<text x="40.0" y="577" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirInformacoes() : void</text>
+<polyline points="287.0,411 287.0,341 579.0,341" fill="none" stroke="#222" stroke-width="1.5"/>
+<rect x="614.0" y="411" width="514.0" height="178" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="614.0" y1="439" x2="1128.0" y2="439" stroke="#222" stroke-width="1.5"/>
+<line x1="614.0" y1="472" x2="1128.0" y2="472" stroke="#222" stroke-width="1.5"/>
+<text x="871.0" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">Revista</text>
+<text x="624.0" y="460" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- edicao : int</text>
+<text x="624.0" y="493" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ Revista(titulo : String, anoPublicacao : int, edicao : int)</text>
+<text x="624.0" y="514" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getEdicao() : int</text>
+<text x="624.0" y="535" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setEdicao(edicao : int) : void</text>
+<text x="624.0" y="556" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ calcularPrazoEmprestimo() : int</text>
+<text x="624.0" y="577" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirInformacoes() : void</text>
+<polyline points="871.0,411 871.0,341 579.0,341" fill="none" stroke="#222" stroke-width="1.5"/>
+<line x1="579.0" y1="341" x2="579.0" y2="317" stroke="#222" stroke-width="1.5"/>
+<polygon points="579.0,301 569.0,319 589.0,319" fill="#ffffff" stroke="#222" stroke-width="1.5"/>
+</svg>

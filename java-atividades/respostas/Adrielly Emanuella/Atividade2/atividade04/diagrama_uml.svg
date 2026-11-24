@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1342 619" width="1342" height="619">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="671.0" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#333">Atividade 4 — Sistema de Produtos (Diagrama de Classes UML)</text>
+<rect x="498.0" y="60" width="346.0" height="241" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="498.0" y1="88" x2="844.0" y2="88" stroke="#222" stroke-width="1.5"/>
+<line x1="498.0" y1="142" x2="844.0" y2="142" stroke="#222" stroke-width="1.5"/>
+<text x="671.0" y="79" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">Produto</text>
+<text x="508.0" y="109" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- nome : String</text>
+<text x="508.0" y="130" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- preco : double</text>
+<text x="508.0" y="163" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ Produto(nome : String, preco : double)</text>
+<text x="508.0" y="184" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getNome() : String</text>
+<text x="508.0" y="205" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setNome(nome : String) : void</text>
+<text x="508.0" y="226" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getPreco() : double</text>
+<text x="508.0" y="247" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setPreco(preco : double) : void</text>
+<text x="508.0" y="268" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ calcularDesconto() : double</text>
+<text x="508.0" y="289" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirProduto() : void</text>
+<rect x="30.0" y="411" width="618.0" height="178" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="30.0" y1="439" x2="648.0" y2="439" stroke="#222" stroke-width="1.5"/>
+<line x1="30.0" y1="472" x2="648.0" y2="472" stroke="#222" stroke-width="1.5"/>
+<text x="339.0" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">ProdutoAlimenticio</text>
+<text x="40.0" y="460" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- dataValidade : String</text>
+<text x="40.0" y="493" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ ProdutoAlimenticio(nome : String, preco : double, dataValidade : String)</text>
+<text x="40.0" y="514" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getDataValidade() : String</text>
+<text x="40.0" y="535" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setDataValidade(dataValidade : String) : void</text>
+<text x="40.0" y="556" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ calcularDesconto() : double</text>
+<text x="40.0" y="577" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirProduto() : void</text>
+<polyline points="339.0,411 339.0,341 671.0,341" fill="none" stroke="#222" stroke-width="1.5"/>
+<rect x="718.0" y="411" width="594.0" height="178" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="718.0" y1="439" x2="1312.0" y2="439" stroke="#222" stroke-width="1.5"/>
+<line x1="718.0" y1="472" x2="1312.0" y2="472" stroke="#222" stroke-width="1.5"/>
+<text x="1015.0" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">ProdutoEletronico</text>
+<text x="728.0" y="460" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- garantiaMeses : int</text>
+<text x="728.0" y="493" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ ProdutoEletronico(nome : String, preco : double, garantiaMeses : int)</text>
+<text x="728.0" y="514" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getGarantiaMeses() : int</text>
+<text x="728.0" y="535" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setGarantiaMeses(garantiaMeses : int) : void</text>
+<text x="728.0" y="556" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ calcularDesconto() : double</text>
+<text x="728.0" y="577" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirProduto() : void</text>
+<polyline points="1015.0,411 1015.0,341 671.0,341" fill="none" stroke="#222" stroke-width="1.5"/>
+<line x1="671.0" y1="341" x2="671.0" y2="317" stroke="#222" stroke-width="1.5"/>
+<polygon points="671.0,301 661.0,319 681.0,319" fill="#ffffff" stroke="#222" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 990 619" width="990" height="619">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="495.0" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#333">Atividade 2 — Sistema de Animais (Diagrama de Classes UML)</text>
+<rect x="338.0" y="60" width="314.0" height="241" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="338.0" y1="88" x2="652.0" y2="88" stroke="#222" stroke-width="1.5"/>
+<line x1="338.0" y1="142" x2="652.0" y2="142" stroke="#222" stroke-width="1.5"/>
+<text x="495.0" y="79" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">Animal</text>
+<text x="348.0" y="109" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- nome : String</text>
+<text x="348.0" y="130" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- idade : int</text>
+<text x="348.0" y="163" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ Animal(nome : String, idade : int)</text>
+<text x="348.0" y="184" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getNome() : String</text>
+<text x="348.0" y="205" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setNome(nome : String) : void</text>
+<text x="348.0" y="226" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getIdade() : int</text>
+<text x="348.0" y="247" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setIdade(idade : int) : void</text>
+<text x="348.0" y="268" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ emitirSom() : void</text>
+<text x="348.0" y="289" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirDados() : void</text>
+<rect x="30.0" y="411" width="450.0" height="178" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="30.0" y1="439" x2="480.0" y2="439" stroke="#222" stroke-width="1.5"/>
+<line x1="30.0" y1="472" x2="480.0" y2="472" stroke="#222" stroke-width="1.5"/>
+<text x="255.0" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">Cachorro</text>
+<text x="40.0" y="460" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- raca : String</text>
+<text x="40.0" y="493" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ Cachorro(nome : String, idade : int, raca : String)</text>
+<text x="40.0" y="514" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getRaca() : String</text>
+<text x="40.0" y="535" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setRaca(raca : String) : void</text>
+<text x="40.0" y="556" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ emitirSom() : void</text>
+<text x="40.0" y="577" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirDados() : void</text>
+<polyline points="255.0,411 255.0,341 495.0,341" fill="none" stroke="#222" stroke-width="1.5"/>
+<rect x="550.0" y="411" width="410.0" height="178" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="550.0" y1="439" x2="960.0" y2="439" stroke="#222" stroke-width="1.5"/>
+<line x1="550.0" y1="472" x2="960.0" y2="472" stroke="#222" stroke-width="1.5"/>
+<text x="755.0" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">Gato</text>
+<text x="560.0" y="460" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- cor : String</text>
+<text x="560.0" y="493" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ Gato(nome : String, idade : int, cor : String)</text>
+<text x="560.0" y="514" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getCor() : String</text>
+<text x="560.0" y="535" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setCor(cor : String) : void</text>
+<text x="560.0" y="556" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ emitirSom() : void</text>
+<text x="560.0" y="577" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirDados() : void</text>
+<polyline points="755.0,411 755.0,341 495.0,341" fill="none" stroke="#222" stroke-width="1.5"/>
+<line x1="495.0" y1="341" x2="495.0" y2="317" stroke="#222" stroke-width="1.5"/>
+<polygon points="495.0,301 485.0,319 505.0,319" fill="#ffffff" stroke="#222" stroke-width="1.5"/>
+</svg>

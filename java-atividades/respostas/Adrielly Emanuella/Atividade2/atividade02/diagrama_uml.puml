@@ -1,0 +1,36 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Animal {
+  - nome : String
+  - idade : int
+  + Animal(nome : String, idade : int)
+  + getNome() : String
+  + setNome(nome : String) : void
+  + getIdade() : int
+  + setIdade(idade : int) : void
+  + emitirSom() : void
+  + exibirDados() : void
+}
+
+class Cachorro {
+  - raca : String
+  + Cachorro(nome : String, idade : int, raca : String)
+  + getRaca() : String
+  + setRaca(raca : String) : void
+  + emitirSom() : void
+  + exibirDados() : void
+}
+
+class Gato {
+  - cor : String
+  + Gato(nome : String, idade : int, cor : String)
+  + getCor() : String
+  + setCor(cor : String) : void
+  + emitirSom() : void
+  + exibirDados() : void
+}
+
+Cachorro --|> Animal
+Gato --|> Animal
+@enduml

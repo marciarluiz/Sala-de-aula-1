@@ -1,0 +1,30 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Circulo {
+  - raio : double
+  + Circulo(raio : double)
+  + getRaio() : double
+  + setRaio(raio : double) : void
+  + calcularArea() : double
+}
+
+abstract class FormaGeometrica {
+  + {abstract} calcularArea() : double
+  + exibirResultado() : void
+}
+
+class Retangulo {
+  - base : double
+  - altura : double
+  + Retangulo(base : double, altura : double)
+  + getBase() : double
+  + setBase(base : double) : void
+  + getAltura() : double
+  + setAltura(altura : double) : void
+  + calcularArea() : double
+}
+
+Circulo --|> FormaGeometrica
+Retangulo --|> FormaGeometrica
+@enduml

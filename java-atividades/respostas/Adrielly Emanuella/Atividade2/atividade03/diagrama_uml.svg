@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1302 682" width="1302" height="682">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="651.0" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#333">Atividade 3 — Sistema de Veículos (Diagrama de Classes UML)</text>
+<rect x="426.0" y="60" width="450.0" height="304" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="426.0" y1="88" x2="876.0" y2="88" stroke="#222" stroke-width="1.5"/>
+<line x1="426.0" y1="163" x2="876.0" y2="163" stroke="#222" stroke-width="1.5"/>
+<text x="651.0" y="79" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">Veiculo</text>
+<text x="436.0" y="109" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- marca : String</text>
+<text x="436.0" y="130" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- modelo : String</text>
+<text x="436.0" y="151" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- ano : int</text>
+<text x="436.0" y="184" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ Veiculo(marca : String, modelo : String, ano : int)</text>
+<text x="436.0" y="205" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getMarca() : String</text>
+<text x="436.0" y="226" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setMarca(marca : String) : void</text>
+<text x="436.0" y="247" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getModelo() : String</text>
+<text x="436.0" y="268" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setModelo(modelo : String) : void</text>
+<text x="436.0" y="289" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getAno() : int</text>
+<text x="436.0" y="310" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setAno(ano : int) : void</text>
+<text x="436.0" y="331" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ ligar() : void</text>
+<text x="436.0" y="352" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirInformacoes() : void</text>
+<rect x="30.0" y="474" width="594.0" height="178" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="30.0" y1="502" x2="624.0" y2="502" stroke="#222" stroke-width="1.5"/>
+<line x1="30.0" y1="535" x2="624.0" y2="535" stroke="#222" stroke-width="1.5"/>
+<text x="327.0" y="493" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">Carro</text>
+<text x="40.0" y="523" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- numeroPortas : int</text>
+<text x="40.0" y="556" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ Carro(marca : String, modelo : String, ano : int, numeroPortas : int)</text>
+<text x="40.0" y="577" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getNumeroPortas() : int</text>
+<text x="40.0" y="598" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setNumeroPortas(numeroPortas : int) : void</text>
+<text x="40.0" y="619" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ ligar() : void</text>
+<text x="40.0" y="640" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirInformacoes() : void</text>
+<polyline points="327.0,474 327.0,404 651.0,404" fill="none" stroke="#222" stroke-width="1.5"/>
+<rect x="694.0" y="474" width="578.0" height="178" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="694.0" y1="502" x2="1272.0" y2="502" stroke="#222" stroke-width="1.5"/>
+<line x1="694.0" y1="535" x2="1272.0" y2="535" stroke="#222" stroke-width="1.5"/>
+<text x="983.0" y="493" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">Moto</text>
+<text x="704.0" y="523" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- cilindradas : int</text>
+<text x="704.0" y="556" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ Moto(marca : String, modelo : String, ano : int, cilindradas : int)</text>
+<text x="704.0" y="577" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getCilindradas() : int</text>
+<text x="704.0" y="598" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setCilindradas(cilindradas : int) : void</text>
+<text x="704.0" y="619" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ ligar() : void</text>
+<text x="704.0" y="640" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirInformacoes() : void</text>
+<polyline points="983.0,474 983.0,404 651.0,404" fill="none" stroke="#222" stroke-width="1.5"/>
+<line x1="651.0" y1="404" x2="651.0" y2="380" stroke="#222" stroke-width="1.5"/>
+<polygon points="651.0,364 641.0,382 661.0,382" fill="#ffffff" stroke="#222" stroke-width="1.5"/>
+</svg>

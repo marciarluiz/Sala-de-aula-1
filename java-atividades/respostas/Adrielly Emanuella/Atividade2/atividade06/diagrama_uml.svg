@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 774 520" width="774" height="520">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="387.0" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#333">Atividade 6 — Sistema de Formas Geométricas (Diagrama de Classes UML)</text>
+<rect x="270.0" y="60" width="234.0" height="100" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="270.0" y1="94" x2="504.0" y2="94" stroke="#222" stroke-width="1.5"/>
+<line x1="270.0" y1="106" x2="504.0" y2="106" stroke="#222" stroke-width="1.5"/>
+<text x="387.0" y="73" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#444">«abstract»</text>
+<text x="387.0" y="88" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" font-style="italic" fill="#111">FormaGeometrica</text>
+<text x="280.0" y="127" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" font-style="italic" xml:space="preserve">+ calcularArea() : double</text>
+<text x="280.0" y="148" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirResultado() : void</text>
+<rect x="30.0" y="270" width="274.0" height="157" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="30.0" y1="298" x2="304.0" y2="298" stroke="#222" stroke-width="1.5"/>
+<line x1="30.0" y1="331" x2="304.0" y2="331" stroke="#222" stroke-width="1.5"/>
+<text x="167.0" y="289" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">Circulo</text>
+<text x="40.0" y="319" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- raio : double</text>
+<text x="40.0" y="352" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ Circulo(raio : double)</text>
+<text x="40.0" y="373" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getRaio() : double</text>
+<text x="40.0" y="394" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setRaio(raio : double) : void</text>
+<text x="40.0" y="415" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ calcularArea() : double</text>
+<polyline points="167.0,270 167.0,200 387.0,200" fill="none" stroke="#222" stroke-width="1.5"/>
+<rect x="374.0" y="270" width="370.0" height="220" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="374.0" y1="298" x2="744.0" y2="298" stroke="#222" stroke-width="1.5"/>
+<line x1="374.0" y1="352" x2="744.0" y2="352" stroke="#222" stroke-width="1.5"/>
+<text x="559.0" y="289" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">Retangulo</text>
+<text x="384.0" y="319" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- base : double</text>
+<text x="384.0" y="340" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- altura : double</text>
+<text x="384.0" y="373" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ Retangulo(base : double, altura : double)</text>
+<text x="384.0" y="394" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getBase() : double</text>
+<text x="384.0" y="415" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setBase(base : double) : void</text>
+<text x="384.0" y="436" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getAltura() : double</text>
+<text x="384.0" y="457" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setAltura(altura : double) : void</text>
+<text x="384.0" y="478" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ calcularArea() : double</text>
+<polyline points="559.0,270 559.0,200 387.0,200" fill="none" stroke="#222" stroke-width="1.5"/>
+<line x1="387.0" y1="200" x2="387.0" y2="176" stroke="#222" stroke-width="1.5"/>
+<polygon points="387.0,160 377.0,178 397.0,178" fill="#ffffff" stroke="#222" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1014 556" width="1014" height="556">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="507.0" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#333">Atividade 8 — Sistema de Pagamentos (Diagrama de Classes UML)</text>
+<rect x="362.0" y="60" width="290.0" height="178" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="362.0" y1="88" x2="652.0" y2="88" stroke="#222" stroke-width="1.5"/>
+<line x1="362.0" y1="121" x2="652.0" y2="121" stroke="#222" stroke-width="1.5"/>
+<text x="507.0" y="79" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">Pagamento</text>
+<text x="372.0" y="109" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- valor : double</text>
+<text x="372.0" y="142" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ Pagamento(valor : double)</text>
+<text x="372.0" y="163" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getValor() : double</text>
+<text x="372.0" y="184" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setValor(valor : double) : void</text>
+<text x="372.0" y="205" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ processarPagamento() : void</text>
+<text x="372.0" y="226" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirComprovante() : void</text>
+<rect x="30.0" y="348" width="466.0" height="178" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="30.0" y1="376" x2="496.0" y2="376" stroke="#222" stroke-width="1.5"/>
+<line x1="30.0" y1="409" x2="496.0" y2="409" stroke="#222" stroke-width="1.5"/>
+<text x="263.0" y="367" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">PagamentoCartao</text>
+<text x="40.0" y="397" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- numeroParcelas : int</text>
+<text x="40.0" y="430" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ PagamentoCartao(valor : double, numeroParcelas : int)</text>
+<text x="40.0" y="451" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getNumeroParcelas() : int</text>
+<text x="40.0" y="472" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setNumeroParcelas(numeroParcelas : int) : void</text>
+<text x="40.0" y="493" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ processarPagamento() : void</text>
+<text x="40.0" y="514" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirComprovante() : void</text>
+<polyline points="263.0,348 263.0,278 507.0,278" fill="none" stroke="#222" stroke-width="1.5"/>
+<rect x="566.0" y="348" width="418.0" height="178" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="566.0" y1="376" x2="984.0" y2="376" stroke="#222" stroke-width="1.5"/>
+<line x1="566.0" y1="409" x2="984.0" y2="409" stroke="#222" stroke-width="1.5"/>
+<text x="775.0" y="367" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">PagamentoPix</text>
+<text x="576.0" y="397" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- chavePix : String</text>
+<text x="576.0" y="430" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ PagamentoPix(valor : double, chavePix : String)</text>
+<text x="576.0" y="451" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getChavePix() : String</text>
+<text x="576.0" y="472" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setChavePix(chavePix : String) : void</text>
+<text x="576.0" y="493" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ processarPagamento() : void</text>
+<text x="576.0" y="514" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirComprovante() : void</text>
+<polyline points="775.0,348 775.0,278 507.0,278" fill="none" stroke="#222" stroke-width="1.5"/>
+<line x1="507.0" y1="278" x2="507.0" y2="254" stroke="#222" stroke-width="1.5"/>
+<polygon points="507.0,238 497.0,256 517.0,256" fill="#ffffff" stroke="#222" stroke-width="1.5"/>
+</svg>

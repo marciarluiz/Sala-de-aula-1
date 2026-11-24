@@ -1,0 +1,36 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Produto {
+  - nome : String
+  - preco : double
+  + Produto(nome : String, preco : double)
+  + getNome() : String
+  + setNome(nome : String) : void
+  + getPreco() : double
+  + setPreco(preco : double) : void
+  + calcularDesconto() : double
+  + exibirProduto() : void
+}
+
+class ProdutoAlimenticio {
+  - dataValidade : String
+  + ProdutoAlimenticio(nome : String, preco : double, dataValidade : String)
+  + getDataValidade() : String
+  + setDataValidade(dataValidade : String) : void
+  + calcularDesconto() : double
+  + exibirProduto() : void
+}
+
+class ProdutoEletronico {
+  - garantiaMeses : int
+  + ProdutoEletronico(nome : String, preco : double, garantiaMeses : int)
+  + getGarantiaMeses() : int
+  + setGarantiaMeses(garantiaMeses : int) : void
+  + calcularDesconto() : double
+  + exibirProduto() : void
+}
+
+ProdutoAlimenticio --|> Produto
+ProdutoEletronico --|> Produto
+@enduml

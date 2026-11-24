@@ -1,0 +1,37 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class ContaBancaria {
+  - titular : String
+  - saldo : double
+  + ContaBancaria(titular : String, saldo : double)
+  + getTitular() : String
+  + setTitular(titular : String) : void
+  + getSaldo() : double
+  # setSaldo(saldo : double) : void
+  + depositar(valor : double) : void
+  + sacar(valor : double) : void
+  + exibirSaldo() : void
+}
+
+class ContaCorrente {
+  - taxaSaque : double
+  + ContaCorrente(titular : String, saldo : double, taxaSaque : double)
+  + getTaxaSaque() : double
+  + setTaxaSaque(taxaSaque : double) : void
+  + sacar(valor : double) : void
+  + exibirSaldo() : void
+}
+
+class ContaPoupanca {
+  - taxaRendimento : double
+  + ContaPoupanca(titular : String, saldo : double, taxaRendimento : double)
+  + getTaxaRendimento() : double
+  + setTaxaRendimento(taxaRendimento : double) : void
+  + sacar(valor : double) : void
+  + exibirSaldo() : void
+}
+
+ContaCorrente --|> ContaBancaria
+ContaPoupanca --|> ContaBancaria
+@enduml

@@ -1,0 +1,36 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Funcionario {
+  - nome : String
+  - salario : double
+  + Funcionario(nome : String, salario : double)
+  + getNome() : String
+  + setNome(nome : String) : void
+  + getSalario() : double
+  + setSalario(salario : double) : void
+  + calcularSalario() : double
+  + exibirDados() : void
+}
+
+class Gerente {
+  - bonus : double
+  + Gerente(nome : String, salario : double, bonus : double)
+  + getBonus() : double
+  + setBonus(bonus : double) : void
+  + calcularSalario() : double
+  + exibirDados() : void
+}
+
+class Vendedor {
+  - comissao : double
+  + Vendedor(nome : String, salario : double, comissao : double)
+  + getComissao() : double
+  + setComissao(comissao : double) : void
+  + calcularSalario() : double
+  + exibirDados() : void
+}
+
+Gerente --|> Funcionario
+Vendedor --|> Funcionario
+@enduml

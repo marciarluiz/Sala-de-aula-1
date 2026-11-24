@@ -1,0 +1,33 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Pagamento {
+  - valor : double
+  + Pagamento(valor : double)
+  + getValor() : double
+  + setValor(valor : double) : void
+  + processarPagamento() : void
+  + exibirComprovante() : void
+}
+
+class PagamentoCartao {
+  - numeroParcelas : int
+  + PagamentoCartao(valor : double, numeroParcelas : int)
+  + getNumeroParcelas() : int
+  + setNumeroParcelas(numeroParcelas : int) : void
+  + processarPagamento() : void
+  + exibirComprovante() : void
+}
+
+class PagamentoPix {
+  - chavePix : String
+  + PagamentoPix(valor : double, chavePix : String)
+  + getChavePix() : String
+  + setChavePix(chavePix : String) : void
+  + processarPagamento() : void
+  + exibirComprovante() : void
+}
+
+PagamentoCartao --|> Pagamento
+PagamentoPix --|> Pagamento
+@enduml

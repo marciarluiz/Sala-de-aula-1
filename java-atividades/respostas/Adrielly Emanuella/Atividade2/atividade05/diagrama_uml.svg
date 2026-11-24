@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1326 640" width="1326" height="640">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="663.0" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#333">Atividade 5 — Sistema Bancário (Diagrama de Classes UML)</text>
+<rect x="454.0" y="60" width="418.0" height="262" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="454.0" y1="88" x2="872.0" y2="88" stroke="#222" stroke-width="1.5"/>
+<line x1="454.0" y1="142" x2="872.0" y2="142" stroke="#222" stroke-width="1.5"/>
+<text x="663.0" y="79" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">ContaBancaria</text>
+<text x="464.0" y="109" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- titular : String</text>
+<text x="464.0" y="130" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- saldo : double</text>
+<text x="464.0" y="163" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ ContaBancaria(titular : String, saldo : double)</text>
+<text x="464.0" y="184" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getTitular() : String</text>
+<text x="464.0" y="205" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setTitular(titular : String) : void</text>
+<text x="464.0" y="226" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getSaldo() : double</text>
+<text x="464.0" y="247" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve"># setSaldo(saldo : double) : void</text>
+<text x="464.0" y="268" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ depositar(valor : double) : void</text>
+<text x="464.0" y="289" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ sacar(valor : double) : void</text>
+<text x="464.0" y="310" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirSaldo() : void</text>
+<rect x="30.0" y="432" width="578.0" height="178" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="30.0" y1="460" x2="608.0" y2="460" stroke="#222" stroke-width="1.5"/>
+<line x1="30.0" y1="493" x2="608.0" y2="493" stroke="#222" stroke-width="1.5"/>
+<text x="319.0" y="451" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">ContaCorrente</text>
+<text x="40.0" y="481" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- taxaSaque : double</text>
+<text x="40.0" y="514" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ ContaCorrente(titular : String, saldo : double, taxaSaque : double)</text>
+<text x="40.0" y="535" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getTaxaSaque() : double</text>
+<text x="40.0" y="556" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setTaxaSaque(taxaSaque : double) : void</text>
+<text x="40.0" y="577" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ sacar(valor : double) : void</text>
+<text x="40.0" y="598" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirSaldo() : void</text>
+<polyline points="319.0,432 319.0,362 663.0,362" fill="none" stroke="#222" stroke-width="1.5"/>
+<rect x="678.0" y="432" width="618.0" height="178" fill="#fffbe6" stroke="#222" stroke-width="1.5"/>
+<line x1="678.0" y1="460" x2="1296.0" y2="460" stroke="#222" stroke-width="1.5"/>
+<line x1="678.0" y1="493" x2="1296.0" y2="493" stroke="#222" stroke-width="1.5"/>
+<text x="987.0" y="451" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#111">ContaPoupanca</text>
+<text x="688.0" y="481" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111" xml:space="preserve">- taxaRendimento : double</text>
+<text x="688.0" y="514" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ ContaPoupanca(titular : String, saldo : double, taxaRendimento : double)</text>
+<text x="688.0" y="535" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ getTaxaRendimento() : double</text>
+<text x="688.0" y="556" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ setTaxaRendimento(taxaRendimento : double) : void</text>
+<text x="688.0" y="577" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ sacar(valor : double) : void</text>
+<text x="688.0" y="598" font-family="Consolas,Menlo,monospace" font-size="13" fill="#111"  xml:space="preserve">+ exibirSaldo() : void</text>
+<polyline points="987.0,432 987.0,362 663.0,362" fill="none" stroke="#222" stroke-width="1.5"/>
+<line x1="663.0" y1="362" x2="663.0" y2="338" stroke="#222" stroke-width="1.5"/>
+<polygon points="663.0,322 653.0,340 673.0,340" fill="#ffffff" stroke="#222" stroke-width="1.5"/>
+</svg>

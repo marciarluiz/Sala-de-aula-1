@@ -1,0 +1,39 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Carro {
+  - numeroPortas : int
+  + Carro(marca : String, modelo : String, ano : int, numeroPortas : int)
+  + getNumeroPortas() : int
+  + setNumeroPortas(numeroPortas : int) : void
+  + ligar() : void
+  + exibirInformacoes() : void
+}
+
+class Moto {
+  - cilindradas : int
+  + Moto(marca : String, modelo : String, ano : int, cilindradas : int)
+  + getCilindradas() : int
+  + setCilindradas(cilindradas : int) : void
+  + ligar() : void
+  + exibirInformacoes() : void
+}
+
+class Veiculo {
+  - marca : String
+  - modelo : String
+  - ano : int
+  + Veiculo(marca : String, modelo : String, ano : int)
+  + getMarca() : String
+  + setMarca(marca : String) : void
+  + getModelo() : String
+  + setModelo(modelo : String) : void
+  + getAno() : int
+  + setAno(ano : int) : void
+  + ligar() : void
+  + exibirInformacoes() : void
+}
+
+Carro --|> Veiculo
+Moto --|> Veiculo
+@enduml

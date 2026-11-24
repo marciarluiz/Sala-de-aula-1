@@ -1,0 +1,36 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Livro {
+  - autor : String
+  + Livro(titulo : String, anoPublicacao : int, autor : String)
+  + getAutor() : String
+  + setAutor(autor : String) : void
+  + calcularPrazoEmprestimo() : int
+  + exibirInformacoes() : void
+}
+
+class MaterialBiblioteca {
+  - titulo : String
+  - anoPublicacao : int
+  + MaterialBiblioteca(titulo : String, anoPublicacao : int)
+  + getTitulo() : String
+  + setTitulo(titulo : String) : void
+  + getAnoPublicacao() : int
+  + setAnoPublicacao(anoPublicacao : int) : void
+  + calcularPrazoEmprestimo() : int
+  + exibirInformacoes() : void
+}
+
+class Revista {
+  - edicao : int
+  + Revista(titulo : String, anoPublicacao : int, edicao : int)
+  + getEdicao() : int
+  + setEdicao(edicao : int) : void
+  + calcularPrazoEmprestimo() : int
+  + exibirInformacoes() : void
+}
+
+Livro --|> MaterialBiblioteca
+Revista --|> MaterialBiblioteca
+@enduml

@@ -1,0 +1,36 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Bicicleta {
+  - tipo : String
+  + Bicicleta(modelo : String, capacidadePassageiros : int, tipo : String)
+  + getTipo() : String
+  + setTipo(tipo : String) : void
+  + mover() : void
+  + exibirInformacoes() : void
+}
+
+class Onibus {
+  - tarifa : double
+  + Onibus(modelo : String, capacidadePassageiros : int, tarifa : double)
+  + getTarifa() : double
+  + setTarifa(tarifa : double) : void
+  + mover() : void
+  + exibirInformacoes() : void
+}
+
+class Transporte {
+  - modelo : String
+  - capacidadePassageiros : int
+  + Transporte(modelo : String, capacidadePassageiros : int)
+  + getModelo() : String
+  + setModelo(modelo : String) : void
+  + getCapacidadePassageiros() : int
+  + setCapacidadePassageiros(capacidadePassageiros : int) : void
+  + mover() : void
+  + exibirInformacoes() : void
+}
+
+Bicicleta --|> Transporte
+Onibus --|> Transporte
+@enduml
